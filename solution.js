@@ -7,3 +7,13 @@ const squareDigits = num => {
 }
 
 console.log(squareDigits(9119)) // 811181
+
+
+// Alternate Solution
+
+
+const squareDigit = num => {
+    return Number(('' + num).split('').map((val) => {return val * val}).join(''))
+}
+
+console.log(squareDigit(9119)) // 811181
